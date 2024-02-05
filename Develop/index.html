@@ -28,7 +28,7 @@
     </header>
     <!--Changed generic <div> below to <img>. Took background image location from CSS to place within img tag. Added alt attribute. -->
     <img alt="company-meeting" class="hero" src="./assets/images/digital-marketing-meeting.jpg"/>
-    <!--Changed all <div> below to <section>-->    
+    <!--Changed all <div> below to <section>. Does not alter appearance.-->    
     <section class="content">
         <section class="search-engine-optimization">
             <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
@@ -52,22 +52,23 @@
             </p>
         </section>
     </section>
+    <!-- Changed all 'benefit-x' selectors to 'benefit-child' to simplify code.-->
     <section class="benefits">
-        <section class="benefit-lead">
+        <section class="benefit-child">
             <h3>Lead Generation</h3>
             <img src="./assets/images/lead-generation.png" />
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
             </p>
         </section>
-        <section class="benefit-brand">
+        <section class="benefit-child">
             <h3>Brand Awareness</h3>
             <img src="./assets/images/brand-awareness.png" />
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
         </section>
-        <section class="benefit-cost">
+        <section class="benefit-child">
             <h3>Cost Management</h3>
             <img src="./assets/images/cost-management.png"></img>
             <p>
@@ -75,12 +76,14 @@
             </p>
         </section>
     </section>
-    <section class="footer">
-        <h2>Made with ❤️️ by Horiseon</h2>
+    <!--Changed <div> tag to <footer>. Deleted redundant 'class=footer'-->
+    <footer class="footer">
+        <!--Changed <h2> tag to <h4> to keep in sequential order.-->
+        <h4>Made with ❤️️ by Horiseon</h4>
         <p>
             &copy; 2023 Horiseon Social Solution Services, Inc.
         </p>
-    </section>
+    </footer>
 </body>
 
 </html>
