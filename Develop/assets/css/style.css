@@ -1,3 +1,11 @@
+/*
+Changes made to this document are as follows:
+Alter class selector names to correspond/link to changes made in HTML document.
+Consolidate redundant rulesets.
+Delete redundant property values which do not alter the appearance of resulting site.
+Add property values where necessary to maintain integrity of site's appearance.
+*/
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -24,7 +32,7 @@ body {
     color: #d9dcd6;
 }
 /*
-Changed following 3 instances of 'div' selector to 'nav' selector, in 3 selectors below.
+Change following 3 instances of 'div' selector to 'nav' selector, in 3 selectors below.
 Will now correspond to parallel change in HTML.
 */
 .header nav {
@@ -54,8 +62,8 @@ p {
 }
 
 /*
-Removed "background" attributes. .hero selector now corresponds to an <img> tag in the HTML. Edited CSS to make image appear as before (not stretched).
-Change height from 800px to 100%. Added object-fit: cover;
+Remove unnecessary "background" properties. .hero selector now corresponds to an <img> element in the HTML. Edit property values to make image appear as before (not stretched).
+Change height from 800px to 100%. Add 'object-fit: cover;' property/value.
 */
 .hero {
     height: 100%;
@@ -91,9 +99,8 @@ Change height from 800px to 100%. Added object-fit: cover;
     background-color: #2589bd;
 }
 /*
-Consolidated '.benefit-x' selectors to single '.benefit-child' selector.
-Deleted all resulting redundancies.
-No change to website appearance.
+Give what were previously 3 selectors common class selector 'benefit-child'
+Consolidate what were previously 9 rulesets into the 3 rulesets below, thus eliminating redundancies.
 */
 .benefit-child {
     margin-bottom: 32px;
@@ -110,72 +117,39 @@ No change to website appearance.
     margin: 10px auto;
     max-width: 150px;
 }
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-/*
-Changing class selector '.footer' to simple element selector, 'footer'.
+/* 
+Give what were previously 3 selectors common class selector 'content-item'
+Consolidate what were previously 9 rulesets into the 3 rulesets below, thus eliminating redundancies.
 */
+.content-item {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.content-item img {
+    max-height: 200px;
+}
+
+.content-item h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/*
+Change class selector '.footer' to simple element selector, 'footer'.
+*/
+
 footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
+
 /*
-Changed h2 to h4, in correspondence with HTML.
+Remove 'footer h2' selector, as font-size value given (20px) is same as the default font-size value for the 'h4' that took place of 'h2' in HTML.
 */
-footer h4 {
-    font-size: 20px;
-}
